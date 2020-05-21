@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <!-- <row class="row"><div class="time-block">9:00 Am</div><textarea class="appointments">This is a row</textarea><button class="saveBtn" class="saveBtn i"></button></row> -->
+      <table id="table" style = "width: 100%"> 
+        <thead>
+          <tr id="main-row">
+            <!-- The scope attribute specifies that this is a header for a column -->
+            <th scope="col" id="time-header">Time</th>
+            <th scope="col" id="activities">Activities</th>
+            <th scope="col"></th>
+            
+          </tr>
+        </thead>
+
+
+        <tbody>
+          <tr id="row">
+            <td class="time-block">9:00am</td>
+            <td id="9" class="textarea" class="text-1">
+             <form action="">
+               <textarea name="input" id="user" cols="70" rows="2"></textarea>
+             </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover1">Save</button><button id="delete" class="deleteBtn-hover1">Delete</button></td>
+          </tr>
+
+
+
+          <tr id="row">
+            <td class="time-block">10:00am</td>
+            <td id="10" class="textarea" class="text-2">
+              <form action=""> 
+                <textarea name="input" id="user" cols="70" rows="2"></textarea>
+              </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover2">Save</button><button id="delete" class="deleteBtn-hover2">Delete</button></td>
+          </tr>
+
+          <tr id="row">
+            <td class="time-block">11:00am</td>
+            <td id="11" class="textarea" class="text-3">
+              <form action=""> 
+              <textarea name="input" id="user" cols="70" rows="2"></textarea>
+            </form></td>
+            <td class="save-col"><button id="save" class="saveBtn-hover3">Save</button><button id="delete" class="deleteBtn-hover3">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">12:00pm</td>
+            <td id="12" class="textarea" class="text-4">
+              <form action=""> 
+                <textarea name="input" id="user" cols="70" rows="2"></textarea>
+              </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover4">Save</button><button id="delete" class="deleteBtn-hover4">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">1:00pm</td>
+            <td id="13" class="textarea" class="text-5">
+              <form action=""> 
+                <textarea name="input" id="user" cols="70" rows="2"></textarea>
+              </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover5">Save</button><button id="delete" class="deleteBtn-hover5">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">2:00pm</td>
+            <td id="14" class="textarea" class="text-6">
+              <form action=""> 
+              <textarea name="input" id="user" cols="70" rows="2"></textarea>
+            </form></td>
+            <td class="save-col"><button id="save" class="saveBtn-hover6">Save</button><button id="delete" class="deleteBtn-hover6">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">3:00pm</td>
+          <td id="15" class="textarea" class="text-7">
+            <form action=""> 
+            <textarea name="input" id="user" cols="70" rows="2"></textarea>
+          </form></td>
+            <td class="save-col"><button id="save" class="saveBtn-hover7">Save</button><button id="delete" class="deleteBtn-hover7">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">4:00pm</td>
+            <td id="16" class="textarea" class="text-8">
+              <form action=""> 
+                <textarea name="input" id="user" cols="70" rows="2"></textarea>
+              </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover8">Save</button><button id="delete" class="deleteBtn-hover8">Delete</button></td>
+          </tr>
+          <tr id="row">
+            <td class="time-block">5:00pm</td>
+            <td id="17" class="textarea" class="text-9">
+              <form action=""> 
+                <textarea name="input" id="user" cols="70" rows="2"></textarea>
+              </form>
+            </td>
+            <td class="save-col"><button id="save" class="saveBtn-hover9">Save</button><button id="delete" class="deleteBtn-hover9">Delete</button></td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+          <!-- Insert additional movie rows here -->
+        </tbody>
+
+
+
+
+      </table>
+
+
+     
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
